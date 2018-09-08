@@ -1,0 +1,8 @@
+<div *ngIf="pictures" class="tiles">
+  <div *ngFor="let picture of pictures">
+    <div class="box">
+    <a (click)="setPhoto(picture)" routerLink="/detail"> <img src="{{picture.size1}}" ></a>
+    </div>
+  </div>
+
+</div>

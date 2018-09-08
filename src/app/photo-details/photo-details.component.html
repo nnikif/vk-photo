@@ -1,0 +1,5 @@
+<div *ngIf="picture">
+  <img src="{{picture.size2}}">
+  <textarea [value]="picture.text" #commentBox id="comment-box" (keyup)="comment$.next($event.target.value)" rows="5" cols="20"></textarea>
+
+</div>
